@@ -1,0 +1,55 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form {
+    width: 400px;
+    background-color: #ffa851;
+    box-shadow: 0px 0px 91px 0px rgba(255,255,255,1);
+    border-radius: 10px;
+}
+
+.questionRepeats {
+    color: white;
+    padding: 5px;
+}
+
+.nameField {
+    width: calc(100% - 10px);
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nameBox {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.title {
+    font-size: 40px;
+}
+
+.titlebox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
