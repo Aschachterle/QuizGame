@@ -9,7 +9,7 @@ const quizComponent = {
     template: `
         <form>
         <div class="titlebox">
-        <p class="title">THIS IS A QUIZ.</p>
+        <p class="title">THIS IS AN ORANGE THEMED ANIMAL QUIZ.</p>
         </div>
         <div class="nameBox">
             <input class="nameField" ng-model="$ctrl.user" type="text" placeholder="name">
@@ -34,7 +34,9 @@ const quizComponent = {
             </div>
                 
         </section>
-        <button ng-click="$ctrl.checkScore()">submit</button>
+            <div class="buttonbox">
+                <button ng-click="$ctrl.checkScore()">submit</button>
+            </div>
         </form>
     `,
     controller: ["QuizService", "$location", function(QuizService, $location) {

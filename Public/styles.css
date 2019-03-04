@@ -3,6 +3,7 @@ body {
     margin-left: 10px;
     display: flex;
     justify-content: center;
+
     background: #ffe259;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -10,7 +11,7 @@ body {
 }
 
 form {
-    width: 400px;
+    width: 500px;
     background-color: #ffa851;
     box-shadow: 0px 0px 91px 0px rgba(255,255,255,1);
     border-radius: 10px;
@@ -22,12 +23,13 @@ form {
 }
 
 .nameField {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     height: 30px;
     outline: none;
     border-radius: 5px;
     border: none;
     font-size: 1.5em;
+    padding: 5px;
 }
 
 .answer {
@@ -52,4 +54,37 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: 5px;
+}
+
+.buttonbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+button {
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.scores {
+    width: 400px;
+    background-color: white;
+    padding: 5px;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scoresTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column
 }

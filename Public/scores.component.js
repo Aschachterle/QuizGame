@@ -7,11 +7,18 @@
 const scoresComponent = {
 
 template: `
-    <p>SCORES:</p>
-    <section ng-repeat="score in $ctrl.scores track by $index">
-        <p>{{score.player_name}}</p>
-        <p>{{score.score}}</p>
-    </section>
+    
+    <div class="scores">
+    <div class="scoresTitle">
+        <p>TA DA!!!!!!!!</p>
+        <p>SCORES:</p>
+    </div>
+        <section class="questions" ng-repeat="score in $ctrl.scores track by $index">
+            <p>{{score.player_name}}</p>
+            <p>{{score.score / 5 * 100}}%</p>
+        </section>
+    </div>
+    
 `,
 controller: ["QuizService", function(QuizService) {
     const vm = this;
